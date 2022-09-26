@@ -9,16 +9,16 @@ interface Props {
 
 const Buscador = ({ busca, setBusca }: Props): ReactElement => {
 
-    return(
-        <div className={style.buscador}>
-            <input type="text" className={style.input} 
-            value={busca} 
-            placeholder="Buscar"
-            onChange={(e: React.ChangeEvent<HTMLInputElement>) => setBusca(e.target.value)}
-            />
-            <CgSearch size={20} color={"#4c4d5e"} />
-        </div>
-    );
+	return(
+		<div className={style.buscador}>
+			<input type="text" className={style.input} 
+				value={busca} 
+				placeholder="Buscar"
+				onChange={(e: React.ChangeEvent<HTMLInputElement>) => setBusca(e.target.value)}
+			/>
+			<CgSearch size={20} color={'#4c4d5e'} />
+		</div>
+	);
 };
 
 export default Buscador;
